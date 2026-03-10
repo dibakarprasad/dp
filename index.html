@@ -2,428 +2,257 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Crime Training - Dhenkanal Police</title>
+    <title>Module 1: Networking & Device Identity</title>
     <style>
-        :root {
-            --primary-red: #ce1212;
-            --primary-blue: #38bdf8;
-            --primary-green: #059669;
-            --primary-purple: #a855f7;
-            --bg-dark: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #020617;
-            color: var(--text-main);
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .slide {
-            background: var(--card-bg);
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 60px;
-            min-height: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
-            page-break-after: always;
-        }
-
-        /* Module Theming */
-        .mod-1 { border-left: 10px solid var(--primary-red); }
-        .mod-2 { border-left: 10px solid var(--primary-blue); }
-        .mod-3 { border-left: 10px solid var(--primary-green); }
-        .mod-4 { border-left: 10px solid var(--primary-purple); }
-
-        .intro-slide {
-            text-align: center;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            border: 2px solid var(--primary-blue);
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid rgba(255,255,255,0.1);
-        }
-
-        .mod-1 h1 { color: var(--primary-red); }
-        .mod-2 h1 { color: var(--primary-blue); }
-        .mod-3 h1 { color: var(--primary-green); }
-        .mod-4 h1 { color: var(--primary-purple); }
-
-        h2 { font-size: 3rem; margin: 10px 0; }
-        h3 { font-size: 1.8rem; color: #94a3b8; margin-bottom: 30px; }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            font-size: 1.35rem;
-            margin-bottom: 18px;
-            padding-left: 35px;
-            position: relative;
-        }
-
-        li::before {
-            content: "➤";
-            position: absolute;
-            left: 0;
-            color: inherit;
-            opacity: 0.7;
-        }
-
-        b {
-            color: #fff;
-            text-decoration: underline;
-            text-decoration-color: rgba(255,255,255,0.2);
-        }
-
-        .footer {
-            margin-top: auto;
-            text-align: right;
-            font-size: 0.9rem;
-            color: #64748b;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 15px;
-        }
-
-        .watermark {
-            position: absolute;
-            bottom: 20px;
-            left: 40px;
-            font-weight: bold;
-            opacity: 0.1;
-            font-size: 1.5rem;
-            letter-spacing: 5px;
-        }
-
-        .nav-hint {
-            text-align: center;
-            color: #475569;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        @media print {
-            body { background: white; color: black; padding: 0; }
-            .slide { 
-                margin: 0; 
-                border: 1px solid #ccc; 
-                box-shadow: none; 
-                min-height: 100vh;
-            }
-            .nav-hint { display: none; }
-        }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: white; margin: 0; }
+        .slide { background: #2d2d2d; border-radius: 15px; padding: 60px; margin: 40px auto; border-left: 12px solid #ce1212; min-height: 600px; width: 80%; box-shadow: 0 20px 40px rgba(0,0,0,0.6); page-break-after: always; }
+        h1 { color: #ce1212; border-bottom: 3px solid #444; padding-bottom: 15px; font-size: 2.5em; }
+        h2 { text-align: center; margin-top: 150px; font-size: 3.5em; color: #f4f4f4; }
+        .intro { text-align: center; border-left: none; background: linear-gradient(135deg, #1a1a1a 0%, #333 100%); }
+        ul { line-height: 2; font-size: 1.4em; margin-top: 30px; }
+        b { color: #ffbd69; }
+        .footer { margin-top: 40px; font-size: 0.9em; color: #888; text-align: right; border-top: 1px solid #444; padding-top: 10px; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="nav-hint">Scroll down to navigate through the training modules</div>
-
-    <div class="slide intro-slide">
+    <div class="slide intro">
         <h2>Training on Cyber Crime and Investigation</h2>
-        <h3>Organized by: Dhenkanal Police</h3>
-        <div style="margin: 40px 0;">
-            <p style="font-size: 1.5rem;">Presented by:</p>
-            <p style="font-size: 2rem; font-weight: bold; color: var(--primary-blue);">Dibakar Prasad Das</p>
-        </div>
-        <p style="color: #64748b;">Comprehensive Technical Manual for Law Enforcement Officers</p>
+        <p style="font-size: 1.8em;">Organized by: <b>Dhenkanal Police</b></p>
+        <hr style="width: 40%; border: 1px solid #ce1212; margin: 40px auto;">
+        <p style="font-size: 1.4em;">Presented by: <b>Dibakar Prasad Das</b></p>
+        <p style="margin-top: 60px; color: #ce1212; font-weight: bold; letter-spacing: 2px;">MODULE 1: NETWORKING & DEVICE IDENTITY</p>
     </div>
 
-    <div class="slide intro-slide mod-1" style="min-height: 300px;">
-        <h1 style="border:none;">MODULE 1</h1>
-        <h2>Networking & Device Identity</h2>
-        <p>Understanding the Digital Landscape</p>
-    </div>
-
-    <div class="slide mod-1">
-        <h1>1. OSI Model (The Framework) - Slide 1</h1>
+    <div class="slide">
+        <h1>OSI Model (The Digital Map) - Slide 1</h1>
         <ul>
-            <li><b>Definition:</b> A 7-layer map showing how data travels from wires to apps.</li>
+            <li><b>Definition:</b> A 7-layer framework explaining how data moves from physical wires to apps.</li>
             <li><b>Full Form:</b> Open Systems Interconnection Model.</li>
-            <li><b>Physical Layer (L1):</b> The actual cables/signals; first place to check if hardware is tampered.</li>
-            <li><b>Network Layer (L3):</b> Where IP Addresses live; identifies the "digital house."</li>
-            <li><b>Application Layer (L7):</b> Where users interact (WhatsApp/Email); contains the actual content.</li>
+            <li><b>Investigation Use:</b> Helps locate where evidence lives (e.g., Physical cable vs. App message).</li>
+            <li><b>Location:</b> Standardized architecture used by every internet-connected device.</li>
+            <li><b>Evidence:</b> If a suspect denies sending a message, investigators look at Layer 7 (Application) logs.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
+    </div>
+    <div class="slide">
+        <h1>OSI Model (The Digital Map) - Slide 2</h1>
+        <ul>
+            <li><b>Layer 2 (Data Link):</b> Identifies the physical device via the MAC Address.</li>
+            <li><b>Layer 3 (Network):</b> Handles routing via the IP Address.</li>
+            <li><b>During Investigation:</b> Used to troubleshoot if a network was bypassed or physically tampered with.</li>
+            <li><b>How to read:</b> Think of it as a stack; Layer 1 is the floor, Layer 7 is the ceiling.</li>
+            <li><b>Analogy:</b> Layer 1 is the road; Layer 3 is the address on the envelope; Layer 7 is the letter content.</li>
+        </ul>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-1">
-        <h1>1. OSI Model (The Framework) - Slide 2</h1>
+    <div class="slide">
+        <h1>IP Addresses (IPv4 vs. IPv6) - Slide 1</h1>
         <ul>
-            <li><b>Investigation Use:</b> Helps narrow down if a crime was a network hack or an app bypass.</li>
-            <li><b>Data Link (L2):</b> Contains the MAC address, identifying the physical hardware.</li>
-            <li><b>Reading logs:</b> Technical logs usually follow these layers; read from bottom up.</li>
-            <li><b>Where found:</b> Conceptual framework used in all network server and router logs.</li>
-            <li><b>Police Tip:</b> Most cybercrime evidence is found at Layer 3 (IP) and Layer 7 (App).</li>
-        </ul>
-        <div class="footer">Dhenkanal Police Training</div>
-    </div>
-
-    <div class="slide mod-1">
-        <h1>2. IP Addresses (The Address) - Slide 1</h1>
-        <ul>
-            <li><b>What it is:</b> A unique numeric label assigned to every device on a network.</li>
+            <li><b>Definition:</b> A unique numeric label assigned to each device on a computer network.</li>
             <li><b>Full Form:</b> Internet Protocol Address.</li>
-            <li><b>IPv4:</b> Four sets of numbers (e.g., 103.4.12.1); most commonly seen in India.</li>
-            <li><b>IPv6:</b> Long alphanumeric strings; used as we run out of IPv4 addresses.</li>
-            <li><b>Public IP:</b> The identity of the entire home/office visible to the global web.</li>
+            <li><b>Investigation Use:</b> Identifies the "Digital House" or connection point used for a crime.</li>
+            <li><b>Public IP:</b> The identity of the entire home/office network visible to the internet.</li>
+            <li><b>Private IP:</b> The internal identity used by devices behind a local router.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-1">
-        <h1>2. IP Addresses (The Address) - Slide 2</h1>
+    <div class="slide">
+        <h1>IP Addresses (IPv4 vs. IPv6) - Slide 2</h1>
         <ul>
-            <li><b>Private IP:</b> Internal address (e.g., 192.168.x.x) given by a local router.</li>
-            <li><b>Investigation Use:</b> The first step to identifying the internet connection used in a crime.</li>
-            <li><b>Where found:</b> Server logs, email headers, and social media login history.</li>
-            <li><b>Reading it:</b> The first half usually identifies the ISP (Internet Service Provider).</li>
-            <li><b>Crucial Rule:</b> An IP address is not a person; it is a connection point.</li>
+            <li><b>IPv4 Appearance:</b> Four numbers separated by dots (e.g., 192.168.1.1).</li>
+            <li><b>IPv6 Appearance:</b> Longer alphanumeric strings (e.g., 2001:0db8...).</li>
+            <li><b>Where it's found:</b> In device "About" settings or logs of visited websites.</li>
+            <li><b>During Investigation:</b> Retrieved from server logs of victims (e.g., a hacked email log).</li>
+            <li><b>Note:</b> Multiple devices in one house often share a single Public IP.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-1">
-        <h1>3. Static vs Dynamic IPs - Slide 1</h1>
+    <div class="slide">
+        <h1>Static vs. Dynamic IPs - Slide 1</h1>
         <ul>
-            <li><b>Static IP:</b> An address that never changes (like a permanent home address).</li>
-            <li><b>Dynamic IP:</b> An address that changes every few hours/days.</li>
-            <li><b>Why it matters:</b> Most Indian mobile users (Jio/Airtel) use Dynamic IPs.</li>
-            <li><b>Investigation:</b> You must provide an <b>exact timestamp</b> to ISPs to get the correct user.</li>
-            <li><b>Lease Time:</b> The duration an IP is assigned to one phone before it moves to another.</li>
+            <li><b>Static IP:</b> An address that never changes, like a permanent home address.</li>
+            <li><b>Dynamic IP:</b> A temporary address that changes every time a device connects.</li>
+            <li><b>Indian Context:</b> Most Indian mobile users (Jio/Airtel) use Dynamic IPs to save costs.</li>
+            <li><b>Investigation Use:</b> Explains why an IP found in a log might point to different users over time.</li>
+            <li><b>Lease Time:</b> The duration for which an ISP "loans" an IP to a specific mobile.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-1">
-        <h1>3. Static vs Dynamic IPs - Slide 2</h1>
+    <div class="slide">
+        <h1>Static vs. Dynamic IPs - Slide 2</h1>
         <ul>
-            <li><b>ISP Assignment:</b> ISPs use a pool of IPs to serve millions of customers.</li>
-            <li><b>DHCP Server:</b> The computer at the ISP that rotates these IPs automatically.</li>
-            <li><b>Radius Logs:</b> The specific report from ISPs showing who had a Dynamic IP at a specific time.</li>
-            <li><b>Reading:</b> Look for "Allocation Time" and "Release Time" in ISP reports.</li>
-            <li><b>Error Warning:</b> A 1-minute time error in your request can lead to the wrong suspect.</li>
+            <li><b>Where it's found:</b> Controlled and assigned by the ISP’s central server.</li>
+            <li><b>During Investigation:</b> Requires a "Timestamp" (date/time) to identify the user correctly.</li>
+            <li><b>How to read:</b> ISP logs show "Allocation Time" and "Release Time" for each IP.</li>
+            <li><b>Common Error:</b> Arresting a person based on an IP without checking the exact time of the crime.</li>
+            <li><b>Static Use:</b> Usually found in corporate offices, banks, or police headquarters.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-1">
-        <h1>4. MAC Address (The Hardware ID) - Slide 1</h1>
+    <div class="slide">
+        <h1>MAC Address (Hardware ID) - Slide 1</h1>
         <ul>
-            <li><b>Full Form:</b> Media Access Control.</li>
-            <li><b>What it is:</b> A permanent "fingerprint" burned into the device's Wi-Fi/Bluetooth chip.</li>
-            <li><b>Format:</b> Six pairs of hex characters (e.g., 00:1A:2B:3C:4D:5E).</li>
-            <li><b>Manufacturer ID:</b> The first 3 pairs identify the brand (Apple, Samsung, etc.).</li>
-            <li><b>Investigation Use:</b> Proves a <b>specific</b> physical device was used, regardless of the SIM.</li>
+            <li><b>Definition:</b> A permanent "fingerprint" assigned to the physical network hardware.</li>
+            <li><b>Full Form:</b> Media Access Control Address.</li>
+            <li><b>Investigation Use:</b> Proves that a *specific* laptop or phone was present on a network.</li>
+            <li><b>NIC:</b> The Network Interface Card—the physical chip that holds this address.</li>
+            <li><b>Location:</b> On a sticker under the device or in "Hardware Info" settings.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-1">
-        <h1>4. MAC Address (The Hardware ID) - Slide 2</h1>
+    <div class="slide">
+        <h1>MAC Address (Hardware ID) - Slide 2</h1>
         <ul>
-            <li><b>Where found:</b> On a sticker on the device or in "About Phone" settings.</li>
-            <li><b>Investigation Trace:</b> Found in the logs of a router the suspect connected to.</li>
-            <li><b>Spoofing:</b> Technical users can "fake" it, but the physical ID remains.</li>
-            <li><b>Permanence:</b> Unlike IP addresses, MAC addresses do not change with the network.</li>
-            <li><b>Smoking Gun:</b> Matching a MAC address from a crime-scene router to a seized phone.</li>
+            <li><b>How it looks:</b> Six pairs of characters (e.g., 00:1A:2B:3C:4D:5E).</li>
+            <li><b>Manufacturer Clue:</b> The first 3 pairs identify the brand (e.g., Apple, Samsung).</li>
+            <li><b>Investigation Trace:</b> Found in the "DHCP Logs" of a seized Wi-Fi router.</li>
+            <li><b>Permanence:</b> Unlike an IP, the MAC address generally does not change with location.</li>
+            <li><b>Evidence Value:</b> Linking a crime-scene MAC address to a suspect's seized phone is strong proof.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide intro-slide mod-2" style="min-height: 300px;">
-        <h1 style="border:none;">MODULE 2</h1>
-        <h2>Telecom & Data Records</h2>
-        <p>Working with Service Provider Data</p>
-    </div>
-
-    <div class="slide mod-2">
-        <h1>1. CDR (Call Detail Record) - Slide 1</h1>
+    <div class="slide">
+        <h1>DHCP Logs (The Link) - Slide 1</h1>
         <ul>
-            <li><b>Full Form:</b> Call Detail Record.</li>
-            <li><b>Definition:</b> Digital log of all calls/SMS made or received by a number.</li>
-            <li><b>Investigation Use:</b> Establishes relationship between suspects via call frequency.</li>
-            <li><b>Data Included:</b> Caller, Receiver, Date, Time, Duration, and Cell Tower ID.</li>
-            <li><b>What's NOT inside:</b> CDRs <b>do not</b> contain audio recordings or SMS text.</li>
+            <li><b>Definition:</b> A record book showing which IP was given to which MAC address.</li>
+            <li><b>Full Form:</b> Dynamic Host Configuration Protocol.</li>
+            <li><b>Investigation Use:</b> The "missing link" between an anonymous IP and a specific device.</li>
+            <li><b>Where it's found:</b> Inside the memory of a Wi-Fi router or an ISP's database.</li>
+            <li><b>During Investigation:</b> Seized from the router at a crime scene or home office.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-2">
-        <h1>1. CDR (Call Detail Record) - Slide 2</h1>
+    <div class="slide">
+        <h1>DHCP Logs (The Link) - Slide 2</h1>
         <ul>
-            <li><b>SMS Logging:</b> Shows when an SMS was sent but lists duration as 0.</li>
-            <li><b>Tower ID:</b> Every call record shows the tower location used at that moment.</li>
-            <li><b>IMEI Link:</b> Shows which physical phone was used to make the call.</li>
-            <li><b>How to read:</b> A-Party (Caller), B-Party (Called), Cell ID (Location).</li>
-            <li><b>Analysis:</b> Used to find "Common Numbers" between two different crime scenes.</li>
+            <li><b>How to read:</b> A table showing: [Time] | [Assigned IP] | [MAC Address].</li>
+            <li><b>Scope:</b> The range of IPs the router is allowed to distribute.</li>
+            <li><b>Evidence:</b> Proves that "Suspect Device A" was connected to "Home Wi-Fi B" at the time of the crime.</li>
+            <li><b>ISP Level:</b> ISPs provide "Radius Logs" which are the high-level version of DHCP logs.</li>
+            <li><b>Importance:</b> Essential when multiple people share the same Wi-Fi connection.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-2">
-        <h1>2. IPDR (Internet Logs) - Slide 1</h1>
+    <div class="slide">
+        <h1>Subnetting & Gateway - Slide 1</h1>
         <ul>
-            <li><b>Full Form:</b> Internet Protocol Detail Record.</li>
-            <li><b>Definition:</b> A log of when a mobile user connected to the internet.</li>
-            <li><b>Investigation Use:</b> Maps a "Crime IP" back to a specific Phone Number.</li>
-            <li><b>Retention:</b> Indian ISPs keep these logs for at least 2 years.</li>
-            <li><b>Data Type:</b> Shows Public IP, Private IP, and Login/Logout timestamps.</li>
+            <li><b>Subnetting:</b> Dividing a large network into smaller, manageable "neighborhoods."</li>
+            <li><b>Gateway:</b> The "Exit Door" (Router) that connects a local network to the internet.</li>
+            <li><b>Why it's needed:</b> Helps narrow down which floor or office wing a suspect was in.</li>
+            <li><b>Location:</b> Found in the "Network Status" of a computer or mobile.</li>
+            <li><b>Common Gateway IP:</b> Usually ends in .1 (e.g., 192.168.1.1).</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-2">
-        <h1>2. IPDR (Internet Logs) - Slide 2</h1>
+    <div class="slide">
+        <h1>Subnetting & Gateway - Slide 2</h1>
         <ul>
-            <li><b>Session Duration:</b> Shows how long the suspect stayed online.</li>
-            <li><b>Destination IP:</b> Sometimes shows which website (e.g., Facebook) was visited.</li>
-            <li><b>Volume:</b> Shows how much data was uploaded (sending threat) vs downloaded.</li>
-            <li><b>MAC Address:</b> Often included to identify the specific handset on the data network.</li>
-            <li><b>Key Rule:</b> Use this to prove a suspect was online at the time of a cyber-attack.</li>
+            <li><b>Subnet Mask:</b> Usually looks like 255.255.255.0.</li>
+            <li><b>Investigation Use:</b> Identifies the local router (Gateway) that must be seized for logs.</li>
+            <li><b>ISP Gateway:</b> The tower or exchange point where a mobile user enters the internet.</li>
+            <li><b>Reading it:</b> If the Gateway IP is known, you can find the physical router controlling the traffic.</li>
+            <li><b>Clue:</b> Different subnets often separate "Guest Wi-Fi" from "Employee Wi-Fi."</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide intro-slide mod-3" style="min-height: 300px;">
-        <h1 style="border:none;">MODULE 3</h1>
-        <h2>Web & Domain Fundamentals</h2>
-        <p>Investigating Fraudulent Websites</p>
-    </div>
-
-    <div class="slide mod-3">
-        <h1>1. DNS (Domain Name System) - Slide 1</h1>
+    <div class="slide">
+        <h1>IMEI vs. IMSI (Handset vs. SIM) - Slide 1</h1>
         <ul>
-            <li><b>Full Form:</b> Domain Name System.</li>
-            <li><b>Definition:</b> The "Phonebook" turning names (google.com) into IPs.</li>
-            <li><b>A-Record:</b> The specific record mapping a site name to its server IP.</li>
-            <li><b>Investigation Use:</b> Tells you where the physical server of a scam site is located.</li>
-            <li><b>Where found:</b> Publicly via "DNS Lookup" tools.</li>
+            <li><b>IMEI:</b> The unique 15-digit ID of the physical phone (The Handset).</li>
+            <li><b>IMSI:</b> The unique 15-digit ID of the SIM card (The Subscriber).</li>
+            <li><b>Full Forms:</b> Int. Mobile Equipment Identity / Int. Mobile Subscriber Identity.</li>
+            <li><b>Why it's needed:</b> To track a suspect even if they switch SIM cards (track IMEI).</li>
+            <li><b>Location:</b> IMEI is on the box or dial *#06#. IMSI is inside the SIM chip.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-3">
-        <h1>1. DNS (Domain Name System) - Slide 2</h1>
+    <div class="slide">
+        <h1>IMEI vs. IMSI (Handset vs. SIM) - Slide 2</h1>
         <ul>
-            <li><b>MX-Record:</b> Shows the server used by the suspect to send emails.</li>
-            <li><b>NS-Record:</b> Name Servers; identify which company manages the site traffic.</li>
-            <li><b>DNS Cache:</b> Can reveal old IPs even after a criminal moves their site.</li>
-            <li><b>Analogy:</b> DNS is the GPS coordinate for a house name.</li>
-            <li><b>How to read:</b> [Domain] -> [Points To] -> [IP Address].</li>
+            <li><b>During Investigation:</b> Found in Call Detail Records (CDRs) provided by ISPs.</li>
+            <li><b>Indian Context:</b> IMSI in India starts with 404 or 405.</li>
+            <li><b>Blacklisting:</b> If a phone is stolen, the IMEI is blocked so no SIM will work in it.</li>
+            <li><b>Evidence:</b> Linking an IMSI (Person) to an IMEI (Phone) proves who was holding the device.</li>
+            <li><b>Note:</b> Dual-SIM phones have two different IMEI numbers.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-3">
-        <h1>2. WHOIS Lookup - Slide 1</h1>
+    <div class="slide">
+        <h1>Cell Tower Triangulation - Slide 1</h1>
         <ul>
-            <li><b>Definition:</b> A query to find who registered a specific website.</li>
-            <li><b>Investigation Use:</b> Finding the name, email, and phone of a fraudster.</li>
-            <li><b>Privacy Guard:</b> Note that criminals often use services to hide their real data.</li>
-            <li><b>Creation Date:</b> A bank site created only 1 day ago is a 100% fake.</li>
-            <li><b>Location:</b> available at whois.com or centralops.net.</li>
+            <li><b>Definition:</b> Estimating a location using signal strength from 3 or more towers.</li>
+            <li><b>Investigation Use:</b> Finds a suspect’s physical location even if GPS is OFF.</li>
+            <li><b>Accuracy:</b> Very high in cities (50-100m); lower in rural areas (1-3km).</li>
+            <li><b>How it works:</b> Measures the distance between the phone and multiple towers.</li>
+            <li><b>Location:</b> Handled by the Telecom Service Provider's (TSP) network.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide intro-slide mod-4" style="min-height: 300px;">
-        <h1 style="border:none;">MODULE 4</h1>
-        <h2>Social Media & OSINT</h2>
-        <p>Open Source Intelligence & Online Evidence</p>
-    </div>
-
-    <div class="slide mod-4">
-        <h1>1. Facebook/Instagram Portals - Slide 1</h1>
+    <div class="slide">
+        <h1>Cell Tower Triangulation - Slide 2</h1>
         <ul>
-            <li><b>What it is:</b> A dedicated portal for Police to request data from Meta.</li>
-            <li><b>Requirements:</b> Requires an official **.gov.in** or **.nic.in** email ID.</li>
-            <li><b>Preservation:</b> You can request a 90-day "Freeze" on a suspect's data instantly.</li>
-            <li><b>Emergency:</b> Used for life-safety cases like kidnappings to get data in minutes.</li>
-            <li><b>Location:</b> facebook.com/records.</li>
+            <li><b>During Investigation:</b> Request "Tower Dump" or "Cell Site Analysis" from Jio/Airtel.</li>
+            <li><b>Azimuth/Sector:</b> Tells you which *side* of the tower the phone was connected to.</li>
+            <li><b>How to read:</b> You get Latitude/Longitude coordinates (e.g., 20.93°N, 85.86°E).</li>
+            <li><b>Evidence:</b> Proves a suspect was "Present" at the crime scene area.</li>
+            <li><b>Timing Advance (TA):</b> A value showing the exact distance from the tower.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-4">
-        <h1>1. Facebook/Instagram Portals - Slide 2</h1>
+    <div class="slide">
+        <h1>WiFi SSID & BSSID - Slide 1</h1>
         <ul>
-            <li><b>Data Provided:</b> IP logs, login history, and registration phone number.</li>
-            <li><b>BSI:</b> Basic Subscriber Information—the first document you should request.</li>
-            <li><b>Legal:</b> You must upload your Section 91 (BNSS 94) notice as a PDF.</li>
-            <li><b>Note:</b> Meta will not share data via random Gmail requests.</li>
-            <li><b>Evidence:</b> Maps a social media profile to a physical IP and Phone number.</li>
+            <li><b>SSID:</b> The name of the Wi-Fi network (e.g., "Airtel_Home").</li>
+            <li><b>BSSID:</b> The physical MAC address of the specific router emitting that signal.</li>
+            <li><b>Full Forms:</b> Service Set Identifier / Basic Service Set Identifier.</li>
+            <li><b>Investigation Use:</b> A suspect can change the SSID, but the BSSID stays the same.</li>
+            <li><b>Location:</b> SSID is visible on phones; BSSID is found on the router's label.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide mod-4">
-        <h1>2. Reverse Image Search - Slide 1</h1>
+    <div class="slide">
+        <h1>WiFi SSID & BSSID - Slide 2</h1>
         <ul>
-            <li><b>Definition:</b> Using a photo to find where else it appears on the web.</li>
-            <li><b>Tools:</b> Google Images, Yandex, and PimEyes.</li>
-            <li><b>Investigation Use:</b> Checking if a suspect's DP is stolen from a model.</li>
-            <li><b>Fake Clue:</b> If a "Girl's Profile" uses a stock photo, it is likely a honey-trap.</li>
-            <li><b>Location:</b> images.google.com.</li>
+            <li><b>Traceability:</b> Global databases (like Wigle.net) map BSSIDs to physical locations.</li>
+            <li><b>During Investigation:</b> Check "Saved Networks" on a seized phone for list of BSSIDs.</li>
+            <li><b>Public Hotspots:</b> BSSIDs can identify which specific railway station or cafe a user was in.</li>
+            <li><b>How to read:</b> BSSID looks like a MAC address (00:A1:B2...).</li>
+            <li><b>Hidden SSID:</b> Some routers hide the name, but the BSSID is always detectable by tools.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
 
-    <div class="slide mod-4">
-        <h1>2. Reverse Image Search - Slide 2</h1>
+    <div class="slide">
+        <h1>VPN/Proxy Mechanics - Slide 1</h1>
         <ul>
-            <li><b>Original Source:</b> Helps find the first time a photo was posted (The Real Owner).</li>
-            <li><b>Identifying Suspects:</b> Upload a CCTV frame to find the suspect's real name.</li>
-            <li><b>Building Match:</b> Search for background buildings to identify a suspect's city.</li>
-            <li><b>Yandex:</b> Particularly powerful for finding faces in India/Asia.</li>
-            <li><b>Police Tip:</b> Use this to verify identity before making a physical arrest.</li>
+            <li><b>Definition:</b> Tools that hide a user's real IP by routing data through a middle server.</li>
+            <li><b>Full Form:</b> Virtual Private Network.</li>
+            <li><b>Investigation Use:</b> Criminals use this to appear as if they are in another country (USA/UK).</li>
+            <li><b>Encryption:</b> VPNs scramble data so the ISP cannot see what the user is doing.</li>
+            <li><b>Where it's found:</b> Installed as apps (NordVPN, ExpressVPN) or browser extensions.</li>
         </ul>
-        <div class="footer">Dhenkanal Police Training</div>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-    <div class="slide intro-slide">
-        <h1>End of Training Manual</h1>
-        <p style="font-size: 1.5rem;">For support, contact the District Cyber Cell.</p>
-        <hr style="width: 40%; border: 1px solid var(--primary-red); margin: 40px auto;">
-        <p>Stay Alert. Stay Informed.</p>
-        <div class="footer">Dhenkanal Police - Technical Training 2026</div>
+    <div class="slide">
+        <h1>VPN/Proxy Mechanics - Slide 2</h1>
+        <ul>
+            <li><b>Red Flag:</b> If a log shows a foreign IP (e.g., Netherlands) for a local suspect.</li>
+            <li><b>How to read:</b> IP lookups will show "Data Center" or "VPN Provider" instead of "Home ISP."</li>
+            <li><b>Challenge:</b> Many VPNs have "No-Logs" policies, making them hard to trace.</li>
+            <li><b>Investigation Goal:</b> If a VPN is used, focus on seizing the device to find logged-in sessions.</li>
+            <li><b>Proxy:</b> Similar to VPN but usually only hides the web browser's activity.</li>
+        </ul>
+        <div class="footer">Dhenkanal Police - Cyber Training</div>
     </div>
-
-</div>
-
-<script>
-    // Optional: Add simple keyboard navigation if desired
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowDown' || e.key === ' ') {
-            window.scrollBy(0, 600);
-        }
-        if (e.key === 'ArrowUp') {
-            window.scrollBy(0, -600);
-        }
-    });
-</script>
 
 </body>
 </html>
