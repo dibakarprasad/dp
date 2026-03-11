@@ -4218,4 +4218,86 @@ document.getElementById('pb').style.width='0%';
 document.getElementById('bn').style.opacity='0.2';
 </script>
 </body>
+
+  <!-- ===== RESPONSIVE FIX PATCH — paste before </body> ===== -->
+<style>
+/* 1. Bullets fill their row equally and text is big */
+.slide-body{
+  flex:1 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:6px !important;
+  padding:8px 20px 6px !important;
+  overflow:hidden !important;
+  min-height:0 !important;
+  justify-content:unset !important;
+}
+.bullet{
+  flex:1 !important;
+  min-height:0 !important;
+  align-items:center !important;
+  padding:0 16px !important;
+  gap:14px !important;
+  border-left:3px solid rgba(0,200,255,0.45) !important;
+}
+.bullet-label{
+  font-size:clamp(9px,1.05vw,11px) !important;
+  width:clamp(100px,16vw,145px) !important;
+  min-width:unset !important;
+}
+.bullet-text{
+  font-size:clamp(14px,1.75vw,19px) !important;
+  line-height:1.5 !important;
+  flex:1 !important;
+  min-width:0 !important;
+}
+
+/* 2. Mobile breakpoint */
+@media(max-width:600px){
+  .topbar{height:42px !important;padding:0 10px !important;}
+  .tb-org{display:none !important;}
+  .tb-title{font-size:10px !important;letter-spacing:0.5px !important;}
+  .mod-badge{font-size:8px !important;}
+  .slide-header{padding:7px 12px 5px !important;}
+  .pt-meta{font-size:8px !important;}
+  .pt-title{font-size:clamp(13px,4.5vw,20px) !important;}
+  .slide-body{padding:5px 8px 4px !important;gap:4px !important;}
+  .bullet{padding:0 10px !important;gap:8px !important;}
+  .bullet-label{width:82px !important;font-size:9px !important;}
+  .bullet-text{font-size:clamp(13px,4vw,16px) !important;}
+  .bottombar{height:30px !important;padding:0 10px !important;}
+  .bb-l,.bb-r{font-size:7px !important;}
+  .corner{width:36px !important;height:36px !important;}
+  .nav-btn{width:30px !important;height:30px !important;font-size:14px !important;}
+  .hint{display:none !important;}
+  .tb-count{font-size:10px !important;}
+}
+/* 3. Landscape phone */
+@media(max-height:500px){
+  .slide-header{padding:5px 14px 4px !important;}
+  .pt-title{font-size:clamp(12px,2.5vw,18px) !important;}
+  .slide-body{padding:4px 14px 3px !important;gap:3px !important;}
+  .bullet-text{font-size:clamp(12px,2.2vw,15px) !important;}
+  .topbar{height:38px !important;}
+  .bottombar{height:28px !important;}
+}
+</style>
+<script>
+/* Touch swipe navigation */
+(function(){
+  var tx=0,ty=0;
+  document.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+  document.addEventListener('touchend',function(e){
+    var dx=e.changedTouches[0].clientX-tx;
+    var dy=e.changedTouches[0].clientY-ty;
+    if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>40){
+      if(typeof go==='function'){dx<0?go(cur+1):go(cur-1);}
+    }
+  },{passive:true});
+  /* Also fix viewport for mobile if not already set */
+  var vp=document.querySelector('meta[name=viewport]');
+  if(vp)vp.content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+})();
+</script>
+<!-- ===== END PATCH ===== -->
 </html>
